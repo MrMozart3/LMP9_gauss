@@ -11,9 +11,9 @@ int eliminate(Matrix *mat, Matrix *b){
 		double max = 0;
 		for (int i = j; i < mat->r; i++)
 		{
-			if(abs(mat->data[i][j]) > max)
+			if(fabs(mat->data[i][j]) > max)
 			{
-				max = abs(mat->data[i][j]);
+				max = fabs(mat->data[i][j]);
 			}
 		}
 		if (max == 0)
